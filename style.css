@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*navigation*/
+.content {
+    max-width: 1700px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    width: 100%;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+
+}
+
+.navbar.sticky {
+    padding: 10px 0;
+    background: #2f7799;
+}
+
+.navbar.sticky .menu-list li a:hover {
+    color: #fff;
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu-list {
+    display: inline-flex;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-list li a span{
+    color: #2f7799;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .menu-list li a span{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+    color: #2f7799;
+}
+
+.icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.icon:hover {
+    color: #2f7799;
+}
+
+.icon.cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+/*navbar contact*/
+.content {
+    max-width: 1700px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.navbar-contact {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    width: 100%;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    background: #2f7799;
+}
+
+.navbar-contact .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-contact .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar-contact .menu-list {
+    display: inline-flex;
+}
+
+.navbar-contact.logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-list li a span{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/*size*/
+@media (max-width: 991px) {
+    body.disabledScroll{
+        overflow: hidden;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+
+    .navbar .menu-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu-list.active {
+        left: 0%;
+    }
+
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+
+    .navbar .menu-list li a {
+        font-size: 23px;
+    }
+}
+
+/*home*/
+.home {
+    display: flex;
+    background-color: #111111;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 100px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: #2f7799;
+    font-weight: 500;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: #2f7799;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #2f7799;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color: #2f7799;
+    background: none;
+}
+
+/*all section*/
+section {
+    padding: 70px 0;
+}
+
+section .title {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+
+section .title-project {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: #111;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section .title-project::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: #111;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #2f7799;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+section .title-project::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #2f7799;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/*about*/
+.about, .services, .skills, .contact, footer, .projects {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;;
+}
+
+.about .title::after {
+    content: "Wie ben ik?";
+}
+
+.about .about-content, .services .serv-content, .skills .skills-content, .contact .contact-content, .projects .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: #2f7799;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: #2f7799;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #2f7799;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: #2f7799;
+    background: none;
+}
+
+/*projects*/
+.projects {
+    background: #111;
+    color: #fff;
+}
+
+.projects .title-project::before {
+    background: #fff;
+}
+
+.projects .title-project::after {
+    content: "Enkele voorbeelden";
+    background: #111;
+}
+
+.projects .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projects .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.projects .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.projects .serv-content .card i {
+    font-size: 30px;
+    color: #2f7799;
+}
+
+.projects .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.projects .serv-content a {
+    color: #fff;
+    margin-left: 690px;
+    display: inline-block;
+    background: #2f7799;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 2px solid #2f7799;
+    transition: all 0.3s ease;
+}
+
+.projects .serv-content a:hover {
+    background: none;
+    color: #2f7799;
+}
+
+.projects .serv-content .card .box a {
+    margin-left: 0;
+    background: none;
+    border: none;
+}
+
+.projects .serv-content .card .box a:hover {
+    color: #fff;
+}
+
+/*contact*/
+.contact .title::after {
+    content: "Neem contact op";
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: #2f7799;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: #333;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field, .contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-left: 10px;
+}
+
+.contact .right form .field input, .contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button {
+    height: 47px;
+    width: 200px;
+}
+
+.contact .right form .button  button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #2f7799;
+    background: #2f7799;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact .right form .button  button:hover {
+    background: none;
+    color: #2f7799;
+
+}
+
+/*footer*/
+footer {
+    background: #222;
+    padding: 10px 15px;;
+    color: #fff;
+}
+
+footer span {
+    font-size: 15px;;
+}
+
+footer span a {
+    color: #2f7799;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*projects - header*/
+.projects-header {
+    display: flex;
+    background-color: #111111;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+
+.projects-header .max-width{
+    margin: auto 0 auto 100px;
+}
+
+.projects-header .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: 600px;
+}
+
+.projects-header .home-content .text-2 span {
+    color: #2f7799;
+    font-weight: 500;
+}
+
+/*project page*/
+.project-java, .services, .skills, .contact, footer, .projects {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;;
+}
+
+.project-java .title-project::after {
+    content: "Java";
+}
+
+.project-java .about-content, .services .serv-content, .skills .skills-content, .contact .contact-content, .projects .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.project-java .about-content .left {
+    width: 45%;
+}
+
+.project-java .about-content .left img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.project-java .about-content .right {
+    width: 55%;
+}
+
+.project-java .about-content .right .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-java .about-content .right .text span {
+    font-size: 30px;
+    color: #2f7799;
+}
+
+.project-java .about-content .right .text-goal {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.project-java .about-content .right .text-goal span {
+    font-size: 20px;
+    color: #2f7799;
+}
+
+.project-java .about-content .right p {
+    text-align: justify;
+}
+
+.project-java .about-content .right a {
+    display: inline-block;
+    background: #2f7799;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #2f7799;
+    transition: all 0.3s ease;
+}
+
+.project-java .about-content .right a:hover {
+    color: #2f7799;
+    background: none;
+}
+
+/*contact - header*/
+.contact-header {
+    display: flex;
+    background-color: #fff;
+    color: #fff;
+    height: 10px;
+}
+
+.contact-header .max-width{
+    margin: auto 0 auto 100px;
+}
+
+/*about - header*/
+.about-header {
+    display: flex;
+    background-color: #111111;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+
+.about-header .max-width{
+    margin: auto 0 auto 100px;
+}
+
+.about-header .home-content .text-3 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: 650px;
+}
+
+.about-header .home-content .text-3 span {
+    color: #2f7799;
+    font-weight: 500;
+}

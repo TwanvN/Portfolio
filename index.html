@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+    <body>
+        <!-- navigation-->
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo"><a href="#">Portfolio</a></div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="about.html">Over mezelf</a></li>
+                    <li><a href="projects.php">Projecten</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!--home section-->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">Hoi, mijn naam is</div>
+                    <div class="text-2">Twan van Noorloos</div>
+                    <div class="text-3">En ik ben <span>Programmeur</span> in opleiding</div>
+                    <a href="about.html">Meer info</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">Over mezelf</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="images/Waterval.PNG" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">Ik ben Twan van Noorloos en ik ben <span>programmeur</span> in opleiding</div>
+                        <p>Mijn naam is Twan van Noorloos en ben een eerstejaars technische informatica student. Van Jongs af aan heb ik al een passie voor ICT en heb nu besloten om daar mijn beroep van te maken. </p>
+                        <a href="about.html">Meer info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section class="projects" id="projects">
+            <div class="max-width">
+                <h2 class="title">Mijn projecten</h2>
+                <div class="serv-content">
+                    <div class="card">
+                        <div class="box">
+                            <i class="	fas fa-cloud-sun-rain"></i>
+                            <div class="text">Internet weerstation</div>
+                            <p>Een applicatie die het huidige weer en het weer van een bepaalde periode van Breda kan laten zien </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-car-alt"></i>
+                            <div class="text">AGV</div>
+                            <p>Robot die zelfstandig binnen een magazijn moet kunnen rijden door middel van het volgen van lijnen op de grond</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-glass-cheers"></i>
+                            <div class="text">Festival planner</div>
+                            <p>Applicatie waarbij de gebruiker een agenda op kan stellen en vervolgens aan de hand van deze agenda een simulatie kan uitvoeren</p>
+                        </div>
+                    </div>
+                    <a href="projects.html">Mijn projecten</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section-->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text">Neem contact op</div>
+                        <p>Als u na het lezen van mijn info en ervaring meer intersse heeft om met mij te werken kunt u contact opnemen via onderstaande gegevens of een berichtje sturen via het forulier hiernaast.</p>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Naam</div>
+                                    <div class="sub-title">Twan van Noorloos</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fa fa-phone"></i>
+                                <div class="info">
+                                    <div class="head">Telefoon</div>
+                                    <div class="sub-title">06-37113974</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">E-mail</div>
+                                    <div class="sub-title">twan.v.n@outlook.com</div>
+                                    <div class="sub-title">t.vannoorloos@student.avans.nl</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text">Stuur een bericht</div>
+                        <form action="contactform.php" method="post">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" name="name" placeholder="Uw volledige naam" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" name="mail" placeholder="Uw e-mail adres" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="subject" placeholder="Onderwerp" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea name="message" placeholder="Bescrijf uw project" required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit" name="submit">Verstuur bericht</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section-->
+        <footer>
+            <span>Created by <a href="#">Twan van Noorloos</a> | <span class ="far fa-copyright"></span> 2021 All rights reserved</span>
+        </footer>
+
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menu = document.querySelector(".menu-list");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = ()=>{
+                menu.classList.add("active");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabledScroll");
+            }
+
+            cancelBtn.onclick = ()=>{
+                menu.classList.remove("active");
+                menuBtn.classList.remove("hide");
+                body.classList.remove("disabledScroll");
+            }
+
+            window.onscroll = ()=>{
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
+
+    </body>
+</html>

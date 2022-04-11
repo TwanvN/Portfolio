@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+
+    <body>
+        <!-- navigation-->
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo"><a href="#">Portfolio</a></div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Over mezelf</a></li>
+                    <li><a href="projects.php">Projecten</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!--home section-->
+        <section class="about-header" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-3">Wie ben ik?</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="max-width">
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="images/Waterval.PNG" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">Ik ben Twan van Noorloos en ik ben <span>programmeur</span> in opleiding</div>
+                        <p>Mijn naam is Twan van Noorloos en ik ben een eerstejaars technische informactica student aan Avans Hogeschool te Breda. Van jongs af aan heb ik al interesse gehad in ICT, van laptops tot telefoons, als het elektronica bevat, vond ik het interessant.Toen ik dus enkele jaren geleden naar opleiding zocht was ik dus gericht op ICT omdat ik hier altijd een passie voor had. Nu vraagt u zicht misschien af, hoe is hij bij TI terecht gekomen? Dit komt omdat technische informactica veel ingaat op hoe elektronicca werkt en hoe software ervoor wordt gemaakt, hierbij krijg je dus een groot deel mee van de ICT wereld en heb ik later meer ervaring.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="max-width">
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="images/WhatsApp%20Image%202021-04-05%20at%2013.55.58.jpeg" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">Wat vinden <span>anderen</span> van mij?</div>
+                        <p>Voor het vak P&OC bij ons op school moesten wij enkele maanden geleden onderzoek doen naar wat anderen van je dachten. Uit dit onderzoek bleek dat veel van mijn vrienden en familieleden mij voornamelijk betrouwbaar, behulpzaam en zorgzaam vinden. Ze vinden mij voornamelijk betrouwbaar omdat ik altijd mijn beloftes nakom en altijd aanwezig ben bij belangrijke afspraken, behulpzaam omdat ze vinden dat ik voor iedereen klaar sta en diegene wil helpen, en zorgzaam omdat ik vaak de behoeften van anderen voor die van mijzelf zet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="max-width">
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="images/WhatsApp%20Image%202021-04-05%20at%2013.56.27.jpeg" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">Mijn <span>ervaring</span></div>
+                        <p>Zoals ik hierboven al heb vermeld ben ik een eerstejaars technische informatica student aan Avans Hogeschool. Hier leer ik hoe je projecten opstar, welke documentatie je bij moet houden en hoe je je code duidelijk en overzichtelijk houdt. Naast mijn opleiding ben ik 4 jaar werkzaam bij de Albert Heijn in Almkerk als vakkenvuller, echter zou ik graag een baan in de ICT willen om meer ervaring op te doen naast school. Voor meer informatie over mijn werk en mijn ervaringen kunt u mijn CV downloaden.</p>
+                        <a href="CV%20Twan%20van%20Noorloos.docx" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <span>Created by <a href="#">Twan van Noorloos</a> | <span class ="far fa-copyright"></span> 2021 All rights reserved</span>
+        </footer>
+
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menu = document.querySelector(".menu-list");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = ()=>{
+                menu.classList.add("active");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabledScroll");
+            }
+
+            cancelBtn.onclick = ()=>{
+                menu.classList.remove("active");
+                menuBtn.classList.remove("hide");
+                body.classList.remove("disabledScroll");
+            }
+
+            window.onscroll = ()=>{
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
+
+
+    </body>
+</html>
